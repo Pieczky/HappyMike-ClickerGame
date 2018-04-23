@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@keyframes ruch
+{
+  0% { background-position:0 0, 0 0, 0 0; }
+  100% { background-position:10000px 0, 7500px 0, 5000px 0; }
+}
+body{
+	margin:0;
+	background-color:#d8e9f5;
+	font-family:Raleway;
+background-attachment:fixed; }
+
+div.blok
+{
+	width:50%;
+	background-image:url(tlo.png),
+					 url(tlo2.png);
+	animation:ruch 20s linear infinite alternate;
+	opacity:0.7;
+	float:left;
+	height:850px;
+	padding:5%;
+}
+.mnoznik
+{
+	width:50%;
+	float:left;
+	text-align:center;
+	height:150px;
+}
+
+a:link
+{
+	text-decoration:none;
+	color:black;
+}
+a:hover
+{
+	text-decoration:none;
+	color:black;
+}
+a:visited
+{
+	text-decoration:none;
+	color:black;
+}
+.panel{
+	float:left;
+	width:35%;
+	height:850px;
+	padding:20px;
+}
+.menu{
+margin-left:30%;
+margin-right:70%;
+margin-top:30%;
+margin-bottom:70%;
+width:50%;}
+.stopka
+{
+	padding-top:25px;
+	padding-bottom:25px;
+	background-color:#515151;
+	color:white;
+	clear:both;
+	text-align:center;
+	position:relative;
+	font-size:12px;
+}
+.mnoznik:hover { 
+    transform: scale(1.10);
+	 transition: transform 0.3s;
+}
+.menu:hover
+{ 
+    transform: scale(1.10);
+	 transition: transform 0.3s;
+}

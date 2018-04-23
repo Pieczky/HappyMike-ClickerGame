@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<head>
+		<meta charset="UTF-8">
+		<title>Clicker Mike</title>
+		<link rel="stylesheet" type="text/css" href="background.css">
+	</head>
+	<body>
+	<div class="blok">
+		<div class="menu" id="theme"><img src="mike.png" width="100%" style="border: 3px solid #f5f5f5;" onClick="addMike()" style="margin-left:20px;" >
+		</div>
+	</div>
+		<script>
+		
+		do{
+			var imie = prompt('Siema, jak sie nazywasz?');
+				if(imie==" " ||	imie=="")
+					{alert('Nie oszukuj...Mike patrzy!');
+					var x=0;}
+				else
+					{alert('Zagrajmy w gre '+imie+', okej?');
+					var x=1;}
+		}
+		while(x==0);
+		
+		var start = 0;
+		
+		function addMike()
+			{
+			var mike = start + 1 * startNr;
+			document.getElementById("id").innerHTML = "Masz juz szczesliwych Majkow: "+ mike +"<br> Mnoznik okejek od Majka: "+ startNr;
+			document.getElementById("blad").innerHTML = " ";
+			document.getElementById("ok").innerHTML = " ";
+			start = mike;
+			}
+		var startNr = 1;
+		function addNew()
+			{
+			if(start>=100)
+				{
+				var number = startNr*2;
+				startNr=number;
+				start=start-100;
+				document.getElementById("id").innerHTML = "Masz juz szczesliwych Majkow: "+ start +"<br> Mnoznik okejek od Majka: "+ startNr;
+				document.getElementById("ok").innerHTML = "Brawo, kupiles mnoznik!";
+			}
+			else
+			{document.getElementById("blad").innerHTML = "Nie masz wystarczajacej ilosci Majkow!";}
+			}
+			
+			
+		function addNew2()
+			{
+			if(start>=500)
+				{
+				var number = startNr*3;
+				startNr=number;
+				start=start-500;
+				document.getElementById("id").innerHTML = "Masz juz szczesliwych Majkow: "+ start +"<br> Mnoznik okejka od Majka: "+ startNr;
+				document.getElementById("ok").innerHTML = "Brawo, kupiles mnoznik!";
+			}
+			else
+			{document.getElementById("blad").innerHTML = "Nie masz wystarczajacej ilosci Majkow!";}
+			}
+			
+			function changeTheme()
+			{
+			if(start>=100)
+				{
+				start=start-100;
+				document.getElementById("theme").innerHTML = "<img src=\"hary.png\" width=\"100%\" style=\"border: 3px solid #f5f5f5;\" onClick=\"addMike()\" style=\"margin-left:20px;\">";	
+			document.getElementById("id").innerHTML = "Masz juz szczesliwych Majkow: "+ start +"<br> Mnoznik okejka od Majka: "+ startNr;
+				document.getElementById("ok").innerHTML = "Brawo, kupiles nowy styl!";
+			}
+			else
+			{document.getElementById("blad").innerHTML = "Nie masz wystarczajacej ilosci Majkow!";}
+			}
+			function changeThemeMike()
+			{
+			if(start>=0)
+				{
+				start=start-0;
+				document.getElementById("theme").innerHTML = "<img src=\"mike.png\" width=\"100%\" style=\"border: 3px solid #f5f5f5;\" onClick=\"addMike()\" style=\"margin-left:20px;\">";	
+			document.getElementById("id").innerHTML = "Masz juz szczesliwych Majkow: "+ start +"<br> Mnoznik okejka od Majka: "+ startNr;
+				document.getElementById("ok").innerHTML = "Brawo, kupiles nowy styl!";
+			}
+			else
+			{document.getElementById("blad").innerHTML = "Nie masz wystarczajacej ilosci Majkow!";}
+			}
+			function changeThemeWerka()
+			{
+			if(start>=1000)
+				{
+				start=start-1000;
+				document.getElementById("theme").innerHTML = "<img src=\"werka.png\" width=\"100%\" style=\"border: 3px solid #f5f5f5;\" onClick=\"addMike()\" style=\"margin-left:20px;\">";	
+			document.getElementById("id").innerHTML = "Masz juz szczesliwych Majkow: "+ start +"<br> Mnoznik okejka od Majka: "+ startNr;
+				document.getElementById("ok").innerHTML = "Brawo, kupiles nowy styl!";
+			}
+			else
+			{document.getElementById("blad").innerHTML = "Nie masz wystarczajacej ilosci Majkow!";}
+			}
+			function changeThemeKinga()
+			{
+			if(start>=300)
+				{
+				start=start-300;
+				document.getElementById("theme").innerHTML = "<img src=\"kinga.png\" width=\"100%\" style=\"border: 3px solid #f5f5f5;\" onClick=\"addMike()\" style=\"margin-left:20px;\">";	
+			document.getElementById("id").innerHTML = "Masz juz szczesliwych Majkow: "+ start +"<br> Mnoznik okejka od Majka: "+ startNr;
+				document.getElementById("ok").innerHTML = "Brawo, kupiles nowy styl!";
+			}
+			else
+			{document.getElementById("blad").innerHTML = "Nie masz wystarczajacej ilosci Majkow!";}
+			}
+			function changeThemePawel()
+			{
+			if(start>=200)
+				{
+				start=start-200;
+				document.getElementById("theme").innerHTML = "<img src=\"pawel.png\" width=\"100%\" style=\"border: 3px solid #f5f5f5;\" onClick=\"addMike()\" style=\"margin-left:20px;\">";	
+			document.getElementById("id").innerHTML = "Masz juz szczesliwych Majkow: "+ start +"<br> Mnoznik okejka od Majka: "+ startNr;
+				document.getElementById("ok").innerHTML = "Brawo, kupiles nowy styl!";
+			}
+			else
+			{document.getElementById("blad").innerHTML = "Nie masz wystarczajacej ilosci Majkow!";}
+			}
+			function changeThemeSokol()
+			{
+			if(start>=10000)
+				{
+				start=start-10000;
+				document.getElementById("theme").innerHTML = "<img src=\"sokol.png\" width=\"100%\" style=\"border: 3px solid #f5f5f5;\" onClick=\"addMike()\" style=\"margin-left:20px;\">";	
+			document.getElementById("id").innerHTML = "Masz juz szczesliwych Majkow: "+ start +"<br> Mnoznik okejka od Majka: "+ startNr;
+				document.getElementById("ok").innerHTML = "Brawo, kupiles nowy styl!";
+			}
+			else
+			{document.getElementById("blad").innerHTML = "Nie masz wystarczajacej ilosci Majkow!";}
+			}
+			function changeThemeSuprise()
+			{
+			if(start>=10000)
+				{
+				start=start-10000;
+				document.getElementById("theme").innerHTML = "<img src=\"suprise2.png\" width=\"100%\" style=\"border: 3px solid #f5f5f5;\" onClick=\"addMike()\" style=\"margin-left:20px;\">";	
+			document.getElementById("id").innerHTML = "Masz juz szczesliwych Majkow: "+ start +"<br> Mnoznik okejka od Majka: "+ startNr;
+				document.getElementById("ok").innerHTML = "Brawo, kupiles nowy styl!";
+			}
+			else
+			{document.getElementById("blad").innerHTML = "Nie masz wystarczajacej ilosci Majkow!";}
+			}
+		</script>
+	<div class="panel">
+		<h2> Witaj <script>document.write(imie);</script> kliknij na wesolego Majka po lewej!</h2>
+		<div id="id" style="font-size:20px;">Masz juz szczesliwych Majkow: <script>document.write(start);</script><br> Mnoznik okejek od Majka: <script>document.write(startNr);</script>
+		</div>
+			<div id="blad" style="color:red"></div>
+			<div id="ok" style="color:green"></div>
+		<br><br>
+		<h4>Kup mnoznik lajkow od Majka!</h4>
+		<div class="mnoznik"><img src="33.png" width="100px" onClick="addNew()" ><br>
+		Koszt: 100</div>
+		<div class="mnoznik"><img src="34.png" width="100px" onClick="addNew2()" ><br>
+		Koszt: 500</div><br>
+		<div><h4>Moze zmienimy skorke, co?</h4></div>
+		<div class="mnoznik"><img src="hary.png" width="100px" onClick="changeTheme()"><br>Harri: 100 Majkow</div>
+		<div class="mnoznik"><img src="mike.png" width="100px" onClick="changeThemeMike()"><br>Mike: Default</div>
+		<div class="mnoznik"><img src="werka.png" width="100px" onClick="changeThemeWerka()"><br>Werka: 1000 Majkow</div>
+		<div class="mnoznik"><img src="kinga.png" width="100px" onClick="changeThemeKinga()"><br>Kinga: 300 Majkow</div>
+		<div class="mnoznik"><img src="pawel.png" width="100px" onClick="changeThemePawel()"><br>Pawel: 200 Majkow</div>
+		<!--<div class="mnoznik"><img src="sokol.png" width="100px" onClick="changeThemeSokol()"><br>Premek: 10000 Majkow</div>-->
+		<div class="mnoznik"><img src="suprise.png" width="100px" onClick="changeThemeSuprise()"><br>Niespodzianka: 10000 Majkow</div>
+		</div>
+		
+	</div>	
+	<div class="stopka">Najlepsza gra na swiecie, pis jo©</div>
+		
+	</div>
+	</body>
